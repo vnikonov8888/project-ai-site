@@ -5,15 +5,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0f",
+        background: "#0b0b0f",
         accent: {
-          DEFAULT: "#6c6cf5",
-          light: "#8b8bff",
+          DEFAULT: "#f5d83d",
+          dark: "#d9c02e",
         },
-        telegram: {
-          DEFAULT: "#3b8fd6",
-          light: "#5fa8e8",
-        },
+        glow: "#6c6cf5",
+      },
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        serif: ["var(--font-playfair)", "Georgia", "serif"],
       },
     },
   },

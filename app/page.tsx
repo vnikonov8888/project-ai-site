@@ -1,6 +1,7 @@
 import Audience from "@/components/Audience";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import InlineCTA from "@/components/InlineCTA";
 import Results from "@/components/Results";
@@ -44,13 +45,14 @@ const SERVICES: ServiceItem[] = [
 export default function Home() {
   return (
     <main>
+      <Header />
       <Hero />
 
       <section
         id="services"
         className="mx-auto max-w-5xl px-4 py-16 sm:px-6 md:py-24"
       >
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2 className="font-serif text-3xl font-bold tracking-tight sm:text-4xl">
           Что мы делаем
         </h2>
         <div className="mt-10">

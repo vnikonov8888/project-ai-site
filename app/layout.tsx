@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin", "cyrillic"] });
+const inter = Inter({ subsets: ["latin", "cyrillic"], variable: "--font-inter" });
+
+const playfair = Playfair_Display({
+  subsets: ["latin", "cyrillic"],
+  weight: ["600", "700", "800"],
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   title: "Project AI — AI-решения для бизнеса",
@@ -16,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
-      <body className={`${inter.className} bg-background text-white antialiased`}>
+    <html lang="ru" className={`${inter.variable} ${playfair.variable}`}>
+      <body className="bg-background font-sans text-white antialiased">
         {children}
       </body>
     </html>
