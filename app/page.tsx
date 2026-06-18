@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import InlineCTA from "@/components/InlineCTA";
 import Results from "@/components/Results";
 import Services, { ServiceItem } from "@/components/Services";
-import TelegramChannel from "@/components/TelegramChannel";
 import VideoShowcase from "@/components/VideoShowcase";
 import { TELEGRAM_CONTACT_URL } from "@/lib/config";
 
@@ -98,7 +97,6 @@ export default function Home() {
       </section>
 
       <Results />
-      <TelegramChannel />
       <Audience />
       <FinalCTA />
       <Footer />

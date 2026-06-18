@@ -39,14 +39,19 @@ npm run start
 ```ts
 export const TELEGRAM_CONTACT_URL = "https://t.me/projectmanager404";
 export const TELEGRAM_CHANNEL_URL = "https://t.me/+zoxuHnEJrd01ODU6";
+export const TELEGRAM_LESSON_BOT_URL = "https://t.me/YOUR_BOT_USERNAME";
 export const INSTAGRAM_URL = "";
 export const TIKTOK_URL = "";
 ```
 
-- `TELEGRAM_CONTACT_URL` — куда ведут кнопки "Обсудить задачу", "Написать
-  менеджеру", "Обсудить решение", "Получить предложение", "Написать нам".
-- `TELEGRAM_CHANNEL_URL` — куда ведут кнопки "Перейти в Telegram-канал" и
-  ссылка "Telegram-канал" в футере.
+- `TELEGRAM_CONTACT_URL` — куда ведут кнопки "Написать менеджеру", "Обсудить
+  решение", "Получить предложение", "Написать нам".
+- `TELEGRAM_CHANNEL_URL` — куда ведут кнопка "Подписаться на Telegram" в Hero
+  и ссылка "Telegram-канал" в футере.
+- `TELEGRAM_LESSON_BOT_URL` — ссылка на будущего Telegram-бота для бесплатного
+  урока. **Пока стоит placeholder `YOUR_BOT_USERNAME`, позже заменить на
+  реальный bot username** (например `https://t.me/projectai_lesson_bot`).
+  Используется кнопкой "Забрать бесплатный урок" в Hero.
 - `INSTAGRAM_URL` / `TIKTOK_URL` — зарезервированы под будущие ссылки
   (например, если в шапке/футере понадобятся иконки соцсетей). Сейчас пустые
   и не используются в интерфейсе.
