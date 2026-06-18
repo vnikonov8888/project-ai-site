@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import InlineCTA from "@/components/InlineCTA";
+import ProjectsShowcase from "@/components/ProjectsShowcase";
 import Results from "@/components/Results";
 import Services, { ServiceItem } from "@/components/Services";
 import VideoShowcase from "@/components/VideoShowcase";
@@ -96,6 +97,7 @@ export default function Home() {
         />
       </section>
 
+      <ProjectsShowcase />
       <Results />
       <Audience />
       <FinalCTA />
