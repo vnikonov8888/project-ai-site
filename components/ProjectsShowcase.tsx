@@ -40,40 +40,33 @@ function ProjectCard({ title, platform, followers, image }: ProjectItem) {
   const [imgFailed, setImgFailed] = useState(false);
 
   return (
-    <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_8px_40px_-12px_rgba(245,216,61,0.18)]">
-      {/* Aspect ratio spacer */}
-      <div className="aspect-[3/4]" />
+    <div className="group overflow-hidden rounded-3xl border border-white/10 bg-[#0d0d10] transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_8px_40px_-12px_rgba(245,216,61,0.18)]">
+      {/* Image container — dark bg so letterboxing looks clean */}
+      <div className="aspect-[9/16] overflow-hidden bg-black">
+        {!imgFailed ? (
+          <img
+            src={image}
+            alt={title}
+            onError={() => setImgFailed(true)}
+            className="h-full w-full object-contain"
+          />
+        ) : (
+          <div
+            className="flex h-full w-full items-center justify-center"
+            style={{
+              background:
+                "radial-gradient(ellipse at 50% 35%, rgba(245,216,61,0.07) 0%, rgba(11,11,15,0) 65%), radial-gradient(ellipse at 80% 80%, rgba(108,108,245,0.08) 0%, rgba(11,11,15,0) 60%)",
+            }}
+          >
+            <span className="font-serif text-7xl font-bold text-white/[0.05]">
+              AI
+            </span>
+          </div>
+        )}
+      </div>
 
-      {/* Image */}
-      {!imgFailed ? (
-        <img
-          src={image}
-          alt={title}
-          onError={() => setImgFailed(true)}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-      ) : (
-        <div
-          className="absolute inset-0 flex items-center justify-center"
-          style={{
-            background:
-              "radial-gradient(ellipse at 50% 35%, rgba(245,216,61,0.07) 0%, rgba(11,11,15,0) 65%), radial-gradient(ellipse at 80% 80%, rgba(108,108,245,0.08) 0%, rgba(11,11,15,0) 60%)",
-          }}
-        >
-          <span className="font-serif text-7xl font-bold text-white/[0.05]">
-            AI
-          </span>
-        </div>
-      )}
-
-      {/* Gradient overlay */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"
-      />
-
-      {/* Text */}
-      <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
+      {/* Text block */}
+      <div className="p-4 sm:p-5">
         <p className="font-semibold text-white">{title}</p>
         <div className="mt-1 flex items-center gap-2">
           <span className="text-xs text-neutral-400">{platform}</span>
