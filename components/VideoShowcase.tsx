@@ -32,7 +32,7 @@ const VIDEOS: VideoItem[] = [
     title: "Character / Cartoon",
     description:
       "AI-персонажи, маскоты и мультяшные ролики для брендов, которым нужна запоминающаяся подача.",
-    src: "/videos/cartoon_web.mp4",
+    src: "/videos/cartoon.mp4",
     glow: "yellow",
   },
 ];
