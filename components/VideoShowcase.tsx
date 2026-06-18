@@ -13,26 +13,26 @@ type VideoItem = {
 const VIDEOS: VideoItem[] = [
   {
     number: "01",
-    title: "Character / Cartoon",
-    description:
-      "AI-персонажи, маскоты и мультяшные ролики для брендов, которым нужна запоминающаяся подача.",
-    src: "/videos/cartoon.mp4",
-    glow: "yellow",
-  },
-  {
-    number: "02",
     title: "Premium Brand Video",
     description:
       "Стильные визуальные ролики для продукта, эксперта или компании: эстетика, имидж и сильное первое впечатление.",
     src: "/videos/stylish.mp4",
-    glow: "purple",
+    glow: "yellow",
   },
   {
-    number: "03",
+    number: "02",
     title: "Cinematic Action",
     description:
       "Динамичные сцены с движением, конфликтом и трейлерным вайбом для роликов, которые должны цеплять с первых секунд.",
     src: "/videos/action.mp4",
+    glow: "purple",
+  },
+  {
+    number: "03",
+    title: "Character / Cartoon",
+    description:
+      "AI-персонажи, маскоты и мультяшные ролики для брендов, которым нужна запоминающаяся подача.",
+    src: "/videos/cartoon.mp4",
     glow: "yellow",
   },
 ];
