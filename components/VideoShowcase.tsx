@@ -16,7 +16,7 @@ const VIDEOS: VideoItem[] = [
     title: "Premium Brand Video",
     description:
       "Стильные визуальные ролики для продукта, эксперта или компании: эстетика, имидж и сильное первое впечатление.",
-    src: "/videos/stylish.mp4",
+    src: "/videos/stylish_web.mp4",
     glow: "yellow",
   },
   {
@@ -24,7 +24,7 @@ const VIDEOS: VideoItem[] = [
     title: "Cinematic Action",
     description:
       "Динамичные сцены с движением, конфликтом и трейлерным вайбом для роликов, которые должны цеплять с первых секунд.",
-    src: "/videos/action.mp4",
+    src: "/videos/action_web.mp4",
     glow: "purple",
   },
   {
@@ -32,7 +32,7 @@ const VIDEOS: VideoItem[] = [
     title: "Character / Cartoon",
     description:
       "AI-персонажи, маскоты и мультяшные ролики для брендов, которым нужна запоминающаяся подача.",
-    src: "/videos/cartoon.mp4",
+    src: "/videos/cartoon_web.mp4",
     glow: "yellow",
   },
 ];
@@ -54,6 +54,7 @@ function VideoCard({ number, title, description, src, glow }: VideoItem) {
           muted
           loop
           playsInline
+          preload="auto"
           className="h-full w-full object-cover"
         />
       </div>
