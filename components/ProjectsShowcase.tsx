@@ -41,14 +41,14 @@ function ProjectCard({ title, platform, followers, image }: ProjectItem) {
 
   return (
     <div className="group overflow-hidden rounded-3xl border border-white/10 bg-[#0d0d10] transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_8px_40px_-12px_rgba(245,216,61,0.18)]">
-      {/* Image container — dark bg so letterboxing looks clean */}
-      <div className="aspect-[9/16] overflow-hidden bg-black">
+      {/* Image container */}
+      <div className="aspect-[4/5] overflow-hidden bg-black">
         {!imgFailed ? (
           <img
             src={image}
             alt={title}
             onError={() => setImgFailed(true)}
-            className="h-full w-full object-contain"
+            className="h-full w-full object-cover object-center"
           />
         ) : (
           <div
