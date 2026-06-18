@@ -14,25 +14,25 @@ const PROJECTS: ProjectItem[] = [
     title: "@project.ai",
     platform: "TikTok",
     followers: "5.1K",
-    image: "/projects/project-ai-tiktok.png",
-  },
-  {
-    title: "@ai404show",
-    platform: "Instagram",
-    followers: "1.3K",
-    image: "/projects/ai404show.png",
-  },
-  {
-    title: "@project.ai.404",
-    platform: "Instagram",
-    followers: "3.3K",
-    image: "/projects/project-ai-404.png",
+    image: "/projects/case-tiktok-project-ai.png",
   },
   {
     title: "@ai404project",
     platform: "Instagram",
     followers: "4K",
-    image: "/projects/ai404project.png",
+    image: "/projects/case-inst-ai404project.jpg",
+  },
+  {
+    title: "@project.ai.404",
+    platform: "Instagram",
+    followers: "3.3K",
+    image: "/projects/case-inst-project-ai-404.jpg",
+  },
+  {
+    title: "@ai404show",
+    platform: "Instagram",
+    followers: "1.3K",
+    image: "/projects/case-inst-ai404show.jpg",
   },
 ];
 
