@@ -108,6 +108,29 @@ function DashboardPreview() {
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
+      {/* Background video */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover opacity-40"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-hidden={true}
+      >
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark overlay so text stays readable */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(160deg, rgba(11,11,15,0.45) 0%, rgba(11,11,15,0.75) 60%, rgba(11,11,15,0.9) 100%)",
+        }}
+      />
+
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
@@ -117,7 +140,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="mx-auto grid max-w-5xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-32">
+      <div className="relative z-10 mx-auto grid max-w-5xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-32">
         {/* Text */}
         <div className="flex flex-col items-start">
           <span className="section-eyebrow">Project AI</span>

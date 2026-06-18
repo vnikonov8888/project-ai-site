@@ -11,16 +11,10 @@ type ProjectItem = {
 
 const PROJECTS: ProjectItem[] = [
   {
-    title: "@ai404project",
-    platform: "Instagram",
-    followers: "4K",
-    image: "/projects/ai404project.png",
-  },
-  {
-    title: "@project.ai.404",
-    platform: "Instagram",
-    followers: "3.3K",
-    image: "/projects/project-ai-404.png",
+    title: "@project.ai",
+    platform: "TikTok",
+    followers: "5.1K",
+    image: "/projects/project-ai-tiktok.png",
   },
   {
     title: "@ai404show",
@@ -29,10 +23,16 @@ const PROJECTS: ProjectItem[] = [
     image: "/projects/ai404show.png",
   },
   {
-    title: "@project.ai",
-    platform: "TikTok",
-    followers: "5.1K",
-    image: "/projects/project-ai-tiktok.png",
+    title: "@project.ai.404",
+    platform: "Instagram",
+    followers: "3.3K",
+    image: "/projects/project-ai-404.png",
+  },
+  {
+    title: "@ai404project",
+    platform: "Instagram",
+    followers: "4K",
+    image: "/projects/ai404project.png",
   },
 ];
 
