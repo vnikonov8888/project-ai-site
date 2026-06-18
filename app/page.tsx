@@ -7,6 +7,7 @@ import InlineCTA from "@/components/InlineCTA";
 import Results from "@/components/Results";
 import Services, { ServiceItem } from "@/components/Services";
 import TelegramChannel from "@/components/TelegramChannel";
+import VideoShowcase from "@/components/VideoShowcase";
 import { TELEGRAM_CONTACT_URL } from "@/lib/config";
 
 const SERVICES: ServiceItem[] = [
@@ -47,6 +48,7 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
+      <VideoShowcase />
 
       <section
         id="services"
