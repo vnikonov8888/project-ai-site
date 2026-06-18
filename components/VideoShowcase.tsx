@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { TELEGRAM_CONTACT_URL } from "@/lib/config";
 
 type VideoItem = {
@@ -38,6 +39,27 @@ const VIDEOS: VideoItem[] = [
 ];
 
 function VideoCard({ number, title, description, src, glow }: VideoItem) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
   const glowShadow =
     glow === "yellow"
       ? "shadow-[0_0_60px_-12px_rgba(245,216,61,0.35)]"
@@ -49,12 +71,12 @@ function VideoCard({ number, title, description, src, glow }: VideoItem) {
     >
       <div className="aspect-[9/16]">
         <video
+          ref={videoRef}
           src={src}
-          autoPlay
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           className="h-full w-full object-cover"
         />
       </div>
