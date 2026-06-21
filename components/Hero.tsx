@@ -3,30 +3,7 @@ import { TELEGRAM_CHANNEL_URL, TELEGRAM_LESSON_BOT_URL } from "@/lib/config";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* Background video */}
-      <video
-        className="absolute inset-0 h-full w-full object-cover opacity-40"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden={true}
-        suppressHydrationWarning
-      >
-        <source src="/videos/hero-bg.mp4" type="video/mp4" />
-      </video>
-
-      {/* Dark overlay so text stays readable */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(160deg, rgba(11,11,15,0.45) 0%, rgba(11,11,15,0.75) 60%, rgba(11,11,15,0.9) 100%)",
-        }}
-      />
-
+      {/* Static premium dark background — no video, no runtime */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
