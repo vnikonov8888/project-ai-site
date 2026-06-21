@@ -12,6 +12,7 @@ export default function Hero() {
         playsInline
         preload="metadata"
         aria-hidden={true}
+        suppressHydrationWarning
       >
         <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>

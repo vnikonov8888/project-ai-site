@@ -78,6 +78,7 @@ function VideoCard({ number, title, description, src, glow }: VideoItem) {
           playsInline
           preload="metadata"
           className="h-full w-full object-cover"
+          suppressHydrationWarning
         />
       </div>
       <div
