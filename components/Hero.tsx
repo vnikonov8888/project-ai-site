@@ -67,6 +67,14 @@ export default function Hero() {
             >
               Подписаться на Telegram
             </a>
+            <a
+              href="https://t.me/dotchVPN_bot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
+              Наш VPN
+            </a>
           </div>
 
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-neutral-500">
