@@ -77,6 +77,29 @@ export default function Hero() {
             </a>
           </div>
 
+          {/* Community block */}
+          <div className="mt-8 w-full max-w-xl rounded-2xl border border-accent/40 bg-white/[0.05] p-6">
+            <p className="text-base font-semibold text-white">
+              🔥 Комьюнити Project AI
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-neutral-300">
+              Закрытое сообщество для тех, кто хочет делать AI-контент системно:
+              промпты, разборы, контент-фермы, отчёты участников и поддержка
+              практиков каждый день.
+            </p>
+            <p className="mt-2 text-sm text-neutral-400">
+              В боте можно посмотреть обзор комьюнити и забрать доступ.
+            </p>
+            <a
+              href="https://t.me/projectailessonbot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-4 inline-block"
+            >
+              Смотреть обзор в боте
+            </a>
+          </div>
+
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-neutral-500">
             В канале Project AI — гайды, советы, монетизация роликов и разборы
             того, как применять AI на практике.
