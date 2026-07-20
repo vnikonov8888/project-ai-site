@@ -1,4 +1,5 @@
-import { TELEGRAM_CHANNEL_URL, TELEGRAM_LESSON_BOT_URL } from "@/lib/config";
+import { TELEGRAM_CHANNEL_URL } from "@/lib/config";
+import BotLink from "@/components/BotLink";
 
 export default function Hero() {
   return (
@@ -51,14 +52,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href={TELEGRAM_LESSON_BOT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              Забрать бесплатный урок
-            </a>
+            <BotLink />
             <a
               href={TELEGRAM_CHANNEL_URL}
               target="_blank"
@@ -68,7 +62,7 @@ export default function Hero() {
               Подписаться на Telegram
             </a>
             <a
-              href="https://t.me/dotchVPN_bot"
+              href="https://t.me/dotchVPN_bot?start=ref_1489261718"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary"

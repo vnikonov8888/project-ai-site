@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import TargetTracker from "@/components/TargetTracker";
 const inter = Inter({ subsets: ["latin", "cyrillic"], variable: "--font-inter" });
 
 const playfair = Playfair_Display({
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-background font-sans text-white antialiased">
+        <TargetTracker />
         <Script id="meta-pixel" strategy="afterInteractive">
   {`
     !function(f,b,e,v,n,t,s)
